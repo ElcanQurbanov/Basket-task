@@ -1,0 +1,59 @@
+﻿@model IEnumerable<Slider>
+
+@{
+    ViewData["Title"] = "Slider";
+}
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Image</th>
+                <th scope="col">Status</th>
+                <th scope="col">Operation</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var slider in Model)
+            {
+
+                <tr>
+
+                    <td class="py-1">
+                        <img src="~/img/@slider.Image" style="width:70px; height:70px; border-radius:50%" alt="image">
+                    </td>
+
+                    <td>
+                        <div class="active-status"></div>
+                        <div class="deActive"></div>
+
+
+                    </td>
+
+                    <td>
+                        <button type="button" class="btn btn-outline-info">
+                            Info
+                        </button>
+
+                        <button type="button" class="btn btn-outline-primary">
+                            Edit
+                        </button>
+
+                        <button type="button" class="btn btn-outline-danger">
+                            Delete
+                        </button>
+
+                    </td>
+
+
+
+                </tr>
+            }
+
+
+        </tbody>
+    </table>
+
+</div>
+

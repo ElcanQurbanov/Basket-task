@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\Entity-Framework-Slider.props" />
+</Project>
